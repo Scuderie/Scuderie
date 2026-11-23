@@ -1,0 +1,48 @@
+<svg width="850" height="176" viewBox="0 0 850 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card {
+      opacity: 0;
+      animation: rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .c1 { animation-delay: 0.1s; }
+    .c2 { animation-delay: 0.22s; }
+    .c3 { animation-delay: 0.34s; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Card 1: E-Commerce -->
+  <g class="card c1" transform="translate(0, 2)">
+    <rect width="272" height="172" rx="14" fill="#0D1117" stroke="#263042" stroke-width="1.2"/>
+    <rect x="20" y="20" width="36" height="36" rx="10" fill="#F97316" fill-opacity="0.14" stroke="#F97316" stroke-opacity="0.35"/>
+    <path d="M31 33H45L43.5 43H32.5L31 33ZM35 33V31.5C35 29.8 36.3 28.5 38 28.5C39.7 28.5 41 29.8 41 31.5V33" stroke="#FB923C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="20" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#F8FAFC">E-Commerce &amp; Retail</text>
+    <text x="20" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">Storefront Shopify e custom,</text>
+    <text x="20" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">GraphQL, Webhooks, POS e</text>
+    <text x="20" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">ottimizzazione Core Web Vitals.</text>
+  </g>
+
+  <!-- Card 2: SaaS & ERP -->
+  <g class="card c2" transform="translate(289, 2)">
+    <rect width="272" height="172" rx="14" fill="#0D1117" stroke="#263042" stroke-width="1.2"/>
+    <rect x="20" y="20" width="36" height="36" rx="10" fill="#8B5CF6" fill-opacity="0.14" stroke="#8B5CF6" stroke-opacity="0.35"/>
+    <path d="M38 29L46 33.5L38 38L30 33.5L38 29ZM30 38.5L38 43L46 38.5M30 43L38 47.5L46 43" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="20" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#F8FAFC">Piattaforme SaaS &amp; ERP</text>
+    <text x="20" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">Architetture multi-tenant,</text>
+    <text x="20" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">automazione supply chain e</text>
+    <text x="20" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">gestionali aziendali su misura.</text>
+  </g>
+
+  <!-- Card 3: AI & Automazioni -->
+  <g class="card c3" transform="translate(578, 2)">
+    <rect width="272" height="172" rx="14" fill="#0D1117" stroke="#263042" stroke-width="1.2"/>
+    <rect x="20" y="20" width="36" height="36" rx="10" fill="#10B981" fill-opacity="0.14" stroke="#10B981" stroke-opacity="0.35"/>
+    <path d="M38 29V33M38 43V47M29 38H33M43 38H47M32 32L34.8 34.8M41.2 41.2L44 44M44 32L41.2 34.8M34.8 41.2L32 44" stroke="#34D399" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="20" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" fill="#F8FAFC">AI &amp; Digital Innovation</text>
+    <text x="20" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">Orchestrazione multi-modello,</text>
+    <text x="20" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">pipeline dati intelligenti e</text>
+    <text x="20" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#94A3B8">integrazioni API enterprise.</text>
+  </g>
+</svg>
