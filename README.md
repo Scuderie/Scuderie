@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://scuderiedigitali.it" target="_blank">
-    <img src="./assets/banner.svg" alt="Scuderie Digitali — E-Business & Full-Stack Engineering" width="100%" />
+    <img src="./asset/banner.svg" alt="Scuderie Digitali — E-Business & Full-Stack Engineering" width="100%" />
   </a>
 </div>
 
@@ -15,7 +15,7 @@ Affianchiamo aziende e brand dalla progettazione architetturale fino al rilascio
 <br />
 
 <div align="center">
-  <img src="./assets/bento.svg" alt="Aree di Competenza — E-Commerce, SaaS & ERP, AI" width="100%" />
+  <img src="./asset/bento.svg" alt="Aree di Competenza — E-Commerce, SaaS & ERP, AI" width="100%" />
 </div>
 
 <br />
@@ -30,7 +30,7 @@ Affianchiamo aziende e brand dalla progettazione architetturale fino al rilascio
 <br />
 
 <div align="center">
-  <img src="./assets/stack.svg" alt="Engineering Stack & Ecosystem" width="100%" />
+  <img src="./asset/stack.svg" alt="Engineering Stack & Ecosystem" width="100%" />
 </div>
 
 <br />
