@@ -1,117 +1,153 @@
-<svg width="850" height="214" viewBox="0 0 850 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="850" height="238" viewBox="0 0 850 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="850" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E1420"/>
+      <stop offset="100%" stop-color="#0B0F17"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#35B5B5"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+
   <style>
-    .box { opacity: 0; animation: fadeIn 0.6s ease-out forwards; }
-    .b1 { animation-delay: 0.1s; }
-    .b2 { animation-delay: 0.2s; }
-    .b3 { animation-delay: 0.3s; }
-    .b4 { animation-delay: 0.4s; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    .box {
+      opacity: 0;
+      animation: fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .b1 { animation-delay: 0.08s; }
+    .b2 { animation-delay: 0.18s; }
+    .b3 { animation-delay: 0.28s; }
+    .b4 { animation-delay: 0.38s; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
   </style>
 
   <!-- Container principale -->
-  <rect x="0.75" y="0.75" width="848.5" height="212.5" rx="16" fill="#0D1117" stroke="#263042" stroke-width="1.2"/>
-  <text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4" fill="#64748B">
+  <rect x="0.75" y="0.75" width="848.5" height="236.5" rx="18" fill="url(#panelBg)" stroke="#263042" stroke-width="1.2"/>
+
+  <!-- Intestazione -->
+  <rect x="24" y="24" width="16" height="4" rx="2" fill="url(#accentBar)"/>
+  <text x="48" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4" fill="#CBD5E1">
     ENGINEERING STACK &amp; ECOSYSTEM
   </text>
+  <text x="826" y="30" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.2" fill="#64748B">
+    FULL-STACK · CLOUD · AI
+  </text>
+  <line x1="24" y1="46" x2="826" y2="46" stroke="#1E293B" stroke-width="1"/>
 
-  <!-- Blocco 1: Frontend -->
-  <g class="box b1" transform="translate(22, 50)">
-    <rect width="394" height="68" rx="12" fill="#131926" stroke="#222C3E" stroke-width="1"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#94A3B8">Frontend &amp; Interface</text>
-    <!-- Pills -->
-    <g transform="translate(16, 35)">
-      <rect width="66" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="11" cy="11" r="3" fill="#E34F26"/>
-      <text x="20" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">HTML5</text>
+  <!-- Blocco 1: Frontend & Interface -->
+  <g transform="translate(24, 60)">
+    <g class="box b1">
+      <rect width="393" height="72" rx="13" fill="#131A29" stroke="#232E42" stroke-width="1"/>
+      <circle cx="19" cy="21" r="3.5" fill="#38BDF8"/>
+      <text x="30" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">Frontend &amp; Interface</text>
+      <g transform="translate(16, 37)">
+        <rect width="60" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="11" cy="11.5" r="3" fill="#E34F26"/>
+        <text x="19" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">HTML5</text>
 
-      <rect x="73" width="56" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="84" cy="11" r="3" fill="#CC6699"/>
-      <text x="93" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">SCSS</text>
+        <rect x="65" width="52" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="76" cy="11.5" r="3" fill="#CC6699"/>
+        <text x="84" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">SCSS</text>
 
-      <rect x="136" width="84" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="147" cy="11" r="3" fill="#3178C6"/>
-      <text x="156" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">TypeScript</text>
+        <rect x="122" width="82" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="133" cy="11.5" r="3" fill="#3178C6"/>
+        <text x="141" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">TypeScript</text>
 
-      <rect x="227" width="68" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="238" cy="11" r="3" fill="#DD0031"/>
-      <text x="247" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Angular</text>
+        <rect x="209" width="66" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="220" cy="11.5" r="3" fill="#DD0031"/>
+        <text x="228" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Angular</text>
 
-      <rect x="302" width="76" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="313" cy="11" r="3" fill="#7952B3"/>
-      <text x="322" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Bootstrap</text>
+        <rect x="280" width="76" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="291" cy="11.5" r="3" fill="#7952B3"/>
+        <text x="299" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Bootstrap</text>
+      </g>
     </g>
   </g>
 
-  <!-- Blocco 2: Backend -->
-  <g class="box b2" transform="translate(434, 50)">
-    <rect width="394" height="68" rx="12" fill="#131926" stroke="#222C3E" stroke-width="1"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#94A3B8">Backend &amp; API Architecture</text>
-    <g transform="translate(16, 35)">
-      <rect width="52" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="11" cy="11" r="3" fill="#777BB4"/>
-      <text x="20" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">PHP</text>
+  <!-- Blocco 2: Backend & API Architecture -->
+  <g transform="translate(433, 60)">
+    <g class="box b2">
+      <rect width="393" height="72" rx="13" fill="#131A29" stroke="#232E42" stroke-width="1"/>
+      <circle cx="19" cy="21" r="3.5" fill="#F43F5E"/>
+      <text x="30" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">Backend &amp; API Architecture</text>
+      <g transform="translate(16, 37)">
+        <rect width="48" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="11" cy="11.5" r="3" fill="#777BB4"/>
+        <text x="19" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">PHP</text>
 
-      <rect x="59" width="66" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="70" cy="11" r="3" fill="#FF2D20"/>
-      <text x="79" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Laravel</text>
+        <rect x="53" width="64" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="64" cy="11.5" r="3" fill="#FF2D20"/>
+        <text x="72" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Laravel</text>
 
-      <rect x="132" width="66" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="143" cy="11" r="3" fill="#3776AB"/>
-      <text x="152" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Python</text>
+        <rect x="122" width="64" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="133" cy="11.5" r="3" fill="#3776AB"/>
+        <text x="141" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Python</text>
 
-      <rect x="205" width="72" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="216" cy="11" r="3" fill="#E535AB"/>
-      <text x="225" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">GraphQL</text>
+        <rect x="191" width="70" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="202" cy="11.5" r="3" fill="#E535AB"/>
+        <text x="210" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">GraphQL</text>
 
-      <rect x="284" width="78" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="295" cy="11" r="3" fill="#10B981"/>
-      <text x="304" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">REST API</text>
+        <rect x="266" width="76" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="277" cy="11.5" r="3" fill="#10B981"/>
+        <text x="285" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">REST API</text>
+      </g>
     </g>
   </g>
 
-  <!-- Blocco 3: Data & E-Commerce -->
-  <g class="box b3" transform="translate(22, 128)">
-    <rect width="394" height="68" rx="12" fill="#131926" stroke="#222C3E" stroke-width="1"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#94A3B8">Data &amp; E-Commerce Platforms</text>
-    <g transform="translate(16, 35)">
-      <rect width="68" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="11" cy="11" r="3" fill="#7AB55C"/>
-      <text x="20" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Shopify</text>
+  <!-- Blocco 3: Data & E-Commerce Platforms -->
+  <g transform="translate(24, 146)">
+    <g class="box b3">
+      <rect width="393" height="72" rx="13" fill="#131A29" stroke="#232E42" stroke-width="1"/>
+      <circle cx="19" cy="21" r="3.5" fill="#10B981"/>
+      <text x="30" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">Data &amp; E-Commerce Platforms</text>
+      <g transform="translate(16, 37)">
+        <rect width="68" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="11" cy="11.5" r="3" fill="#7AB55C"/>
+        <text x="19" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Shopify</text>
 
-      <rect x="75" width="66" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="86" cy="11" r="3" fill="#4479A1"/>
-      <text x="95" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">MySQL</text>
+        <rect x="74" width="64" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="85" cy="11.5" r="3" fill="#4479A1"/>
+        <text x="93" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">MySQL</text>
 
-      <rect x="148" width="88" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="159" cy="11" r="3" fill="#4169E1"/>
-      <text x="168" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">PostgreSQL</text>
+        <rect x="144" width="86" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="155" cy="11.5" r="3" fill="#4169E1"/>
+        <text x="163" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">PostgreSQL</text>
 
-      <rect x="243" width="102" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="254" cy="11" r="3" fill="#F97316"/>
-      <text x="263" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Multi-Tenant</text>
+        <rect x="236" width="96" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="247" cy="11.5" r="3" fill="#F97316"/>
+        <text x="255" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Multi-Tenant</text>
+      </g>
     </g>
   </g>
 
-  <!-- Blocco 4: AI & Automation -->
-  <g class="box b4" transform="translate(434, 128)">
-    <rect width="394" height="68" rx="12" fill="#131926" stroke="#222C3E" stroke-width="1"/>
-    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#94A3B8">AI Workflows &amp; Operations</text>
-    <g transform="translate(16, 35)">
-      <rect width="98" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="11" cy="11" r="3" fill="#A855F7"/>
-      <text x="20" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">AI Pipelines</text>
+  <!-- Blocco 4: AI Workflows & Operations -->
+  <g transform="translate(433, 146)">
+    <g class="box b4">
+      <rect width="393" height="72" rx="13" fill="#131A29" stroke="#232E42" stroke-width="1"/>
+      <circle cx="19" cy="21" r="3.5" fill="#A855F7"/>
+      <text x="30" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#CBD5E1">AI Workflows &amp; Operations</text>
+      <g transform="translate(16, 37)">
+        <rect width="88" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="11" cy="11.5" r="3" fill="#A855F7"/>
+        <text x="19" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">AI Pipelines</text>
 
-      <rect x="105" width="90" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="116" cy="11" r="3" fill="#35B5B5"/>
-      <text x="125" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">Webhooks</text>
+        <rect x="94" width="80" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="105" cy="11.5" r="3" fill="#35B5B5"/>
+        <text x="113" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">Webhooks</text>
 
-      <rect x="202" width="84" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="213" cy="11" r="3" fill="#EC4899"/>
-      <text x="222" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">ERP / CRM</text>
+        <rect x="180" width="82" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="191" cy="11.5" r="3" fill="#EC4899"/>
+        <text x="199" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">ERP / CRM</text>
 
-      <rect x="293" width="66" height="22" rx="11" fill="#1C2436" stroke="#2E3B52"/>
-      <circle cx="304" cy="11" r="3" fill="#F59E0B"/>
-      <text x="313" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0">CI / CD</text>
+        <rect x="268" width="66" height="23" rx="11.5" fill="#1B2436" stroke="#2D3B54"/>
+        <circle cx="279" cy="11.5" r="3" fill="#F59E0B"/>
+        <text x="287" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#E2E8F0">CI / CD</text>
+      </g>
     </g>
   </g>
 </svg>
